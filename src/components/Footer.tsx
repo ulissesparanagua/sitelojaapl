@@ -1,4 +1,5 @@
-import { Monitor, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
+import logoApl from "@/assets/logo-apl.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -30,10 +31,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <a href="#inicio" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center">
-                <Monitor className="w-5 h-5 text-primary-foreground" />
-              </div>
+            <a href="#inicio" className="flex items-center gap-3 mb-4">
+              <img 
+                src={logoApl} 
+                alt="APL Informática" 
+                className="w-12 h-12 rounded-full object-cover"
+              />
               <span className="text-xl font-bold">
                 APL <span className="text-primary">Informática</span>
               </span>

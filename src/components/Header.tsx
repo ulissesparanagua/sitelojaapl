@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Monitor, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logoApl from "@/assets/logo-apl.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,11 +18,13 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#inicio" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center shadow-soft group-hover:shadow-hover transition-shadow duration-300">
-              <Monitor className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <span className="text-xl font-bold text-foreground">
+          <a href="#inicio" className="flex items-center gap-3 group">
+            <img 
+              src={logoApl} 
+              alt="APL Informática" 
+              className="w-12 h-12 rounded-full object-cover shadow-soft group-hover:shadow-hover transition-shadow duration-300"
+            />
+            <span className="text-xl font-bold text-foreground hidden sm:block">
               APL <span className="text-gradient">Informática</span>
             </span>
           </a>
