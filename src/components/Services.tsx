@@ -1,44 +1,42 @@
-import { 
-  Monitor, 
-  Laptop, 
-  HardDrive, 
-  Wifi, 
-  Shield, 
-  Wrench,
-  ArrowRight
-} from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import servicePC from "@/assets/service-pc.jpg";
+import serviceNotebook from "@/assets/service-notebook.jpg";
+import serviceData from "@/assets/service-data.jpg";
+import serviceNetwork from "@/assets/service-network.jpg";
+import serviceSecurity from "@/assets/service-security.jpg";
+import serviceMaintenance from "@/assets/service-maintenance.jpg";
 
 const Services = () => {
   const services = [
     {
-      icon: Monitor,
+      image: servicePC,
       title: "Manutenção de Computadores",
-      description: "Diagnóstico, reparo e upgrade de desktops. Limpeza interna e otimização de desempenho.",
+      description: "Diagnóstico, reparo e upgrade de desktops. Limpeza interna e otimização.",
     },
     {
-      icon: Laptop,
+      image: serviceNotebook,
       title: "Reparo de Notebooks",
-      description: "Troca de tela, teclado, bateria, e reparos na placa-mãe. Atendimento para todas as marcas.",
+      description: "Troca de tela, teclado, bateria, e reparos na placa-mãe.",
     },
     {
-      icon: HardDrive,
+      image: serviceData,
       title: "Recuperação de Dados",
-      description: "Recuperação de arquivos em HDs, SSDs e pendrives danificados ou formatados.",
+      description: "Recuperação de arquivos em HDs, SSDs e pendrives danificados.",
     },
     {
-      icon: Wifi,
+      image: serviceNetwork,
       title: "Redes e Conectividade",
-      description: "Instalação e configuração de redes Wi-Fi, cabeamento estruturado e roteadores.",
+      description: "Instalação e configuração de redes Wi-Fi e cabeamento.",
     },
     {
-      icon: Shield,
+      image: serviceSecurity,
       title: "Segurança Digital",
-      description: "Remoção de vírus, instalação de antivírus e proteção contra ameaças online.",
+      description: "Remoção de vírus e proteção contra ameaças online.",
     },
     {
-      icon: Wrench,
+      image: serviceMaintenance,
       title: "Manutenção Preventiva",
-      description: "Planos de manutenção para empresas. Evite problemas antes que aconteçam.",
+      description: "Planos de manutenção para empresas. Evite problemas.",
     },
   ];
 
@@ -46,41 +44,55 @@ const Services = () => {
     <section id="servicos" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
-          <span className="text-primary font-semibold text-sm uppercase tracking-wider">
-            Nossos Serviços
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">
-            Soluções completas em <span className="text-gradient">informática</span>
-          </h2>
-          <p className="text-muted-foreground text-lg">
-            Oferecemos uma ampla gama de serviços para atender todas as suas necessidades tecnológicas.
-          </p>
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
+          <div>
+            <span className="text-primary font-semibold text-sm uppercase tracking-wider">
+              Nossos Serviços
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2">
+              Soluções completas em{" "}
+              <span className="text-primary">informática</span>
+            </h2>
+          </div>
+          <a 
+            href="#contato" 
+            className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+          >
+            Ver todos os serviços
+            <ArrowRight className="w-5 h-5" />
+          </a>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
               key={index}
-              className="group p-6 md:p-8 rounded-2xl bg-card border border-border hover:border-primary/30 shadow-card hover:shadow-hover transition-all duration-300"
+              className="group rounded-2xl overflow-hidden bg-card border border-border hover:border-primary/30 shadow-card hover:shadow-hover transition-all duration-300"
             >
-              <div className="w-14 h-14 rounded-xl gradient-primary flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
-                <service.icon className="w-7 h-7 text-primary-foreground" />
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={service.image} 
+                  alt={service.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-3">
-                {service.title}
-              </h3>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                {service.description}
-              </p>
-              <a
-                href="#contato"
-                className="inline-flex items-center gap-2 text-primary font-semibold text-sm group-hover:gap-3 transition-all duration-200"
-              >
-                Saiba mais
-                <ArrowRight className="w-4 h-4" />
-              </a>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-foreground mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  {service.description}
+                </p>
+                <a
+                  href="#contato"
+                  className="inline-flex items-center gap-2 text-primary font-semibold text-sm group-hover:gap-3 transition-all duration-200"
+                >
+                  Saiba mais
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
             </div>
           ))}
         </div>
