@@ -1,60 +1,87 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, Clock, Award } from "lucide-react";
+import { Phone, ArrowRight } from "lucide-react";
+import heroImage from "@/assets/hero-tech.jpg";
 
 const Hero = () => {
-  const highlights = [
-    { icon: Shield, text: "Garantia em todos os serviços" },
-    { icon: Clock, text: "Atendimento rápido" },
-    { icon: Award, text: "+15 anos de experiência" },
-  ];
-
   return (
-    <section id="inicio" className="relative pt-24 md:pt-32 pb-16 md:pb-24 overflow-hidden gradient-hero">
-      {/* Background decoration */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-1/2 -right-1/4 w-[600px] h-[600px] rounded-full bg-primary/5 blur-3xl" />
-        <div className="absolute -bottom-1/4 -left-1/4 w-[400px] h-[400px] rounded-full bg-accent/5 blur-3xl" />
-      </div>
+    <section id="inicio" className="relative min-h-screen pt-20">
+      {/* Background */}
+      <div className="absolute inset-0 bg-foreground" />
+      
+      <div className="relative z-10 container mx-auto px-4 h-full">
+        <div className="grid lg:grid-cols-2 gap-8 items-center min-h-[calc(100vh-80px)]">
+          {/* Left Content */}
+          <div className="py-12 lg:py-0">
+            <span className="inline-block px-4 py-2 rounded-full bg-primary/20 text-primary text-sm font-semibold mb-6">
+              Assistência Técnica Especializada
+            </span>
+            
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-background mb-6 leading-tight">
+              Seu equipamento em{" "}
+              <span className="text-primary">boas mãos</span>
+            </h1>
+            
+            <p className="text-background/70 text-lg md:text-xl mb-8 max-w-xl leading-relaxed">
+              Especialistas em manutenção e reparo de computadores, notebooks e periféricos. 
+              Soluções rápidas e eficientes para você e sua empresa.
+            </p>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-fade-in">
-            <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            Assistência Técnica Especializada
-          </div>
+            <div className="flex flex-col sm:flex-row gap-4 mb-10">
+              <Button variant="hero" size="lg" className="group">
+                Solicitar Orçamento
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+              <Button 
+                variant="heroOutline" 
+                size="lg"
+                className="border-background/30 text-background hover:bg-background/10"
+              >
+                <Phone className="w-5 h-5" />
+                (11) 99999-9999
+              </Button>
+            </div>
 
-          {/* Headline */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-            Seu equipamento em{" "}
-            <span className="text-gradient">boas mãos</span>
-          </h1>
-
-          {/* Subheadline */}
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            Especialistas em manutenção e reparo de computadores, notebooks e periféricos. 
-            Soluções rápidas e eficientes para você e sua empresa.
-          </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variant="hero" size="lg" className="group">
-              Solicitar Orçamento
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="outline" size="lg">
-              Nossos Serviços
-            </Button>
-          </div>
-
-          {/* Trust indicators */}
-          <div className="flex flex-wrap justify-center gap-6 md:gap-10">
-            {highlights.map((item, index) => (
-              <div key={index} className="flex items-center gap-2 text-muted-foreground">
-                <item.icon className="w-5 h-5 text-primary" />
-                <span className="text-sm font-medium">{item.text}</span>
+            {/* Trust badges */}
+            <div className="flex items-center gap-6 text-background/60 text-sm">
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-primary" />
+                <span>Atendimento imediato</span>
               </div>
-            ))}
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-primary" />
+                <span>Orçamento grátis</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Image */}
+          <div className="relative hidden lg:block">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <img 
+                src={heroImage} 
+                alt="Técnico de informática trabalhando" 
+                className="w-full h-[600px] object-cover"
+              />
+              {/* Overlay card */}
+              <div className="absolute bottom-6 left-6 right-6 p-6 bg-background/95 backdrop-blur-sm rounded-2xl">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-foreground font-bold text-lg">+5.000 clientes</p>
+                    <p className="text-muted-foreground text-sm">satisfeitos em todo Brasil</p>
+                  </div>
+                  <div className="flex -space-x-3">
+                    {[1, 2, 3, 4].map((i) => (
+                      <div 
+                        key={i} 
+                        className="w-10 h-10 rounded-full bg-primary/20 border-2 border-background flex items-center justify-center text-primary font-bold text-sm"
+                      >
+                        {i}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

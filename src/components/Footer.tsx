@@ -1,4 +1,6 @@
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Phone, Mail, MapPin } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import logoApl from "@/assets/logo-apl.png";
 
 const Footer = () => {
@@ -10,12 +12,13 @@ const Footer = () => {
       { name: "Reparo de Notebook", href: "#servicos" },
       { name: "Recuperação de Dados", href: "#servicos" },
       { name: "Redes e Wi-Fi", href: "#servicos" },
+      { name: "Segurança Digital", href: "#servicos" },
     ],
     company: [
       { name: "Sobre nós", href: "#sobre" },
+      { name: "Nossos Serviços", href: "#servicos" },
+      { name: "Depoimentos", href: "#" },
       { name: "Contato", href: "#contato" },
-      { name: "Política de Privacidade", href: "#" },
-      { name: "Termos de Uso", href: "#" },
     ],
   };
 
@@ -26,24 +29,50 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-foreground text-background py-12 md:py-16">
-      <div className="container mx-auto px-4">
+    <footer className="bg-foreground">
+      {/* Newsletter Section */}
+      <div className="border-b border-background/10">
+        <div className="container mx-auto px-4 py-12">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div>
+              <h3 className="text-2xl font-bold text-background mb-2">
+                Receba nossas novidades
+              </h3>
+              <p className="text-background/70">
+                Dicas de manutenção e ofertas exclusivas direto no seu e-mail.
+              </p>
+            </div>
+            <div className="flex gap-3 w-full md:w-auto">
+              <Input 
+                type="email" 
+                placeholder="Seu e-mail" 
+                className="h-12 bg-background/10 border-background/20 text-background placeholder:text-background/50 md:w-64"
+              />
+              <Button variant="hero" size="lg">
+                Inscrever
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Footer */}
+      <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
-          <div className="lg:col-span-2">
-            <a href="#inicio" className="flex items-center gap-3 mb-4">
+          <div>
+            <a href="#inicio" className="flex items-center gap-3 mb-6">
               <img 
                 src={logoApl} 
                 alt="APL Informática" 
                 className="w-12 h-12 rounded-full object-cover"
               />
-              <span className="text-xl font-bold">
+              <span className="text-xl font-bold text-background">
                 APL <span className="text-primary">Informática</span>
               </span>
             </a>
-            <p className="text-background/70 max-w-md mb-6 leading-relaxed">
+            <p className="text-background/70 mb-6 leading-relaxed">
               Há mais de 15 anos oferecendo soluções completas em informática. 
-              Sua confiança é nossa maior conquista.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social, index) => (
@@ -53,7 +82,7 @@ const Footer = () => {
                   aria-label={social.label}
                   className="w-10 h-10 rounded-lg bg-background/10 hover:bg-primary flex items-center justify-center transition-colors duration-300"
                 >
-                  <social.icon className="w-5 h-5" />
+                  <social.icon className="w-5 h-5 text-background" />
                 </a>
               ))}
             </div>
@@ -61,7 +90,7 @@ const Footer = () => {
 
           {/* Services Links */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Serviços</h4>
+            <h4 className="font-bold text-lg text-background mb-4">Serviços</h4>
             <ul className="space-y-3">
               {links.services.map((link, index) => (
                 <li key={index}>
@@ -78,7 +107,7 @@ const Footer = () => {
 
           {/* Company Links */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Empresa</h4>
+            <h4 className="font-bold text-lg text-background mb-4">Empresa</h4>
             <ul className="space-y-3">
               {links.company.map((link, index) => (
                 <li key={index}>
@@ -92,6 +121,25 @@ const Footer = () => {
               ))}
             </ul>
           </div>
+
+          {/* Contact Info */}
+          <div>
+            <h4 className="font-bold text-lg text-background mb-4">Contato</h4>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3 text-background/70">
+                <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <span>Rua das Tecnologias, 123<br />Centro - São Paulo, SP</span>
+              </li>
+              <li className="flex items-center gap-3 text-background/70">
+                <Phone className="w-5 h-5 text-primary shrink-0" />
+                <span>(11) 99999-9999</span>
+              </li>
+              <li className="flex items-center gap-3 text-background/70">
+                <Mail className="w-5 h-5 text-primary shrink-0" />
+                <span>contato@aplinformatica.com.br</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* Bottom Bar */}
@@ -99,9 +147,14 @@ const Footer = () => {
           <p className="text-background/60 text-sm">
             © {currentYear} APL Informática. Todos os direitos reservados.
           </p>
-          <p className="text-background/60 text-sm">
-            Desenvolvido com 💙 em São Paulo
-          </p>
+          <div className="flex gap-6 text-sm">
+            <a href="#" className="text-background/60 hover:text-primary transition-colors">
+              Política de Privacidade
+            </a>
+            <a href="#" className="text-background/60 hover:text-primary transition-colors">
+              Termos de Uso
+            </a>
+          </div>
         </div>
       </div>
     </footer>
