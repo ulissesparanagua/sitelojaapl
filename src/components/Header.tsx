@@ -24,8 +24,9 @@ const Header = () => {
               alt="APL Informática" 
               className="w-12 h-12 rounded-full object-cover shadow-soft group-hover:shadow-hover transition-shadow duration-300"
             />
-            <span className="text-xl font-bold text-foreground hidden sm:block">
-              APL <span className="text-gradient">Informática</span>
+            <span className="hidden sm:flex items-center gap-1">
+              <span className="font-brand text-xl text-primary">APL</span>
+              <span className="text-lg font-semibold text-foreground">Informática</span>
             </span>
           </a>
 
