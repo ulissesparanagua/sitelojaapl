@@ -27,7 +27,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-background/70 text-lg md:text-xl mb-8 max-w-xl leading-relaxed">
-              Especialistas em manutenção e reparo de computadores, notebooks e periféricos. 
+              Especialistas em manutenção e reparo de computadores, notebooks e impressoras. 
               Soluções rápidas e eficientes para você e sua empresa.
             </p>
 
