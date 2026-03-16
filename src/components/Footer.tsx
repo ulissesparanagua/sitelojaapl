@@ -129,11 +129,15 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-background/70">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span>Rua das Tecnologias, 123<br />Centro - São Paulo, SP</span>
+                <span>Av. Brigadeiro Mário Epinghaus, nº 329<br />Centro - Lauro de Freitas-BA<br />CEP: 42703-640</span>
               </li>
               <li className="flex items-center gap-3 text-background/70">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                <span>(11) 99999-9999</span>
+                <span>(71) 3378-9497</span>
+              </li>
+              <li className="flex items-center gap-3 text-background/70">
+                <Phone className="w-5 h-5 text-primary shrink-0" />
+                <span>WhatsApp: (71) 99313-6222</span>
               </li>
               <li className="flex items-center gap-3 text-background/70">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
