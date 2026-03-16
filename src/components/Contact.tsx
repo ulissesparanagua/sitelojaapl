@@ -21,14 +21,14 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Endereço",
-      content: "Rua das Tecnologias, 123",
-      subtitle: "Centro - São Paulo, SP",
+      content: "Av. Brigadeiro Mário Epinghaus, nº 329",
+      subtitle: "Centro - Lauro de Freitas-BA | CEP: 42703-640",
     },
     {
       icon: Phone,
-      title: "Telefone",
-      content: "(11) 99999-9999",
-      subtitle: "(11) 3333-3333",
+      title: "Telefone / WhatsApp",
+      content: "(71) 3378-9497",
+      subtitle: "WhatsApp: (71) 99313-6222",
     },
     {
       icon: Mail,
