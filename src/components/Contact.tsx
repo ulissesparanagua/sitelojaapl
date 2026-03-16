@@ -33,14 +33,14 @@ const Contact = () => {
     {
       icon: Mail,
       title: "E-mail",
-      content: "contato@aplinformatica.com.br",
+      content: "apl.informatica9497@gmail.com",
       subtitle: "",
     },
     {
       icon: Clock,
       title: "Horário",
-      content: "Seg a Sex: 8h às 18h",
-      subtitle: "Sáb: 8h às 12h",
+      content: "Seg a Sex: 9h às 18h",
+      subtitle: "Sáb: 9h às 12h",
     },
   ];
 
