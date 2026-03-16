@@ -73,7 +73,7 @@ const Footer = () => {
               </span>
             </a>
             <p className="text-background/70 mb-6 leading-relaxed">
-              Há mais de 15 anos oferecendo soluções completas em informática. 
+              Há mais de 25 anos oferecendo soluções completas em informática. 
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social, index) => (
