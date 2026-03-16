@@ -25,7 +25,7 @@ const WhyUs = () => {
   ];
 
   const stats = [
-    { value: "15+", label: "Anos de experiência" },
+    { value: "25+", label: "Anos de experiência" },
     { value: "5000+", label: "Clientes atendidos" },
     { value: "98%", label: "Taxa de satisfação" },
     { value: "24h", label: "Tempo médio de reparo" },
