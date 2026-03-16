@@ -18,7 +18,7 @@ const Hero = () => {
           {/* Left Content */}
           <div className="py-12 lg:py-0">
             <span className="inline-block px-4 py-2 rounded-full bg-primary/20 text-primary text-sm font-semibold mb-6">
-              Há mais de 25 anos oferecendo soluções completas em informática
+              Assistência Técnica Especializada
             </span>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-background mb-6 leading-tight">

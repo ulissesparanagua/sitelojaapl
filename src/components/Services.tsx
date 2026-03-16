@@ -9,19 +9,14 @@ import serviceMaintenance from "@/assets/service-maintenance.jpg";
 const Services = () => {
   const services = [
     {
-      image: serviceNotebook,
-      title: "Assistência Técnica em Notebook",
-      description: "Troca de tela, teclado, bateria, e reparos na placa-mãe. Diagnóstico completo.",
-    },
-    {
       image: servicePC,
-      title: "Assistência Técnica em Computador e PC Gamer",
-      description: "Diagnóstico, reparo e upgrade de desktops e PCs Gamer. Limpeza interna e otimização.",
+      title: "Manutenção de Computadores",
+      description: "Diagnóstico, reparo e upgrade de desktops. Limpeza interna e otimização.",
     },
     {
-      image: serviceMaintenance,
-      title: "Assistência Técnica em Impressora Jato de Tinta e Laser",
-      description: "Manutenção, reparo e configuração de impressoras jato de tinta e laser.",
+      image: serviceNotebook,
+      title: "Reparo de Notebooks",
+      description: "Troca de tela, teclado, bateria, e reparos na placa-mãe.",
     },
     {
       image: serviceData,
@@ -37,6 +32,11 @@ const Services = () => {
       image: serviceSecurity,
       title: "Segurança Digital",
       description: "Remoção de vírus e proteção contra ameaças online.",
+    },
+    {
+      image: serviceMaintenance,
+      title: "Manutenção Preventiva",
+      description: "Planos de manutenção para empresas. Evite problemas.",
     },
   ];
 
