@@ -33,7 +33,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "E-mail",
-      content: "contato@aplinformatica.com.br",
+      content: "apl.informatica9497@gmail.com",
       subtitle: "",
     },
     {
