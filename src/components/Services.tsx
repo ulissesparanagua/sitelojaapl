@@ -24,11 +24,6 @@ const Services = () => {
       description: "Recuperação de arquivos em HDs, SSDs e pendrives danificados.",
     },
     {
-      image: serviceNetwork,
-      title: "Redes e Conectividade",
-      description: "Instalação e configuração de redes Wi-Fi e cabeamento.",
-    },
-    {
       image: serviceSecurity,
       title: "Segurança Digital",
       description: "Remoção de vírus e proteção contra ameaças online.",
