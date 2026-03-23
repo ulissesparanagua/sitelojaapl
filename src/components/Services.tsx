@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import servicePC from "@/assets/service-pc.jpg";
 import serviceNotebook from "@/assets/service-notebook.jpg";
 import serviceData from "@/assets/service-data.jpg";
-import serviceNetwork from "@/assets/service-network.jpg";
+
 import serviceSecurity from "@/assets/service-security.jpg";
 import serviceMaintenance from "@/assets/service-maintenance.jpg";
 
