@@ -5,6 +5,7 @@ import serviceData from "@/assets/service-data.jpg";
 
 import serviceSecurity from "@/assets/service-security.jpg";
 import serviceMaintenance from "@/assets/service-maintenance.jpg";
+import servicePrinter from "@/assets/service-printer.jpg";
 
 const Services = () => {
   const services = [
@@ -32,6 +33,11 @@ const Services = () => {
       image: serviceMaintenance,
       title: "Manutenção Preventiva",
       description: "Planos de manutenção para empresas. Evite problemas.",
+    },
+    {
+      image: servicePrinter,
+      title: "Assistência Técnica em Impressoras",
+      description: "Manutenção, reparo e configuração de impressoras de todas as marcas.",
     },
   ];
 
