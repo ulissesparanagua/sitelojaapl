@@ -17,7 +17,7 @@ const Services = () => {
     {
       image: serviceNotebook,
       title: "Reparo de Notebooks",
-      description: "Troca de tela, teclado, bateria, e reparos na placa-mãe.",
+      description: "Troca de tela, teclado, bateria, reparos na placa-mãe, recuperação de carcaça e dobradiças.",
     },
     {
       image: serviceData,
