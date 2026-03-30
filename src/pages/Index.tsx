@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import StatsBar from "@/components/StatsBar";
 import Services from "@/components/Services";
+import Brands from "@/components/Brands";
 import WhyUs from "@/components/WhyUs";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
