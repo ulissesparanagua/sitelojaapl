@@ -1,8 +1,46 @@
 import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
-import { services } from "@/lib/services-data";
+import servicePC from "@/assets/service-pc.jpg";
+import serviceNotebook from "@/assets/service-notebook.jpg";
+import serviceData from "@/assets/service-data.jpg";
+
+import serviceSecurity from "@/assets/service-security.jpg";
+import serviceMaintenance from "@/assets/service-maintenance.jpg";
+import servicePrinter from "@/assets/service-printer.jpg";
 
 const Services = () => {
+  const services = [
+    {
+      image: servicePC,
+      title: "Manutenção de Computadores",
+      description: "Diagnóstico, reparo e upgrade de desktops. Limpeza interna e otimização.",
+    },
+    {
+      image: serviceNotebook,
+      title: "Reparo de Notebooks",
+      description: "Troca de tela, teclado, bateria, reparos na placa-mãe, recuperação de carcaça e dobradiças.",
+    },
+    {
+      image: serviceData,
+      title: "Recuperação de Dados",
+      description: "Recuperação de arquivos em HDs, SSDs e pendrives danificados.",
+    },
+    {
+      image: serviceSecurity,
+      title: "Segurança Digital",
+      description: "Remoção de vírus e proteção contra ameaças online.",
+    },
+    {
+      image: serviceMaintenance,
+      title: "Manutenção Preventiva",
+      description: "Planos de manutenção para empresas. Evite problemas.",
+    },
+    {
+      image: servicePrinter,
+      title: "Assistência Técnica em Impressoras",
+      description: "Manutenção, reparo e configuração de impressoras de todas as marcas.",
+    },
+  ];
+
   return (
     <section id="servicos" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -48,13 +86,13 @@ const Services = () => {
                 <p className="text-muted-foreground mb-4 leading-relaxed">
                   {service.description}
                 </p>
-                <Link
-                  to={`/servicos/${service.slug}`}
+                <a
+                  href="#contato"
                   className="inline-flex items-center gap-2 text-primary font-semibold text-sm group-hover:gap-3 transition-all duration-200"
                 >
                   Saiba mais
                   <ArrowRight className="w-4 h-4" />
-                </Link>
+                </a>
               </div>
             </div>
           ))}
