@@ -3,11 +3,6 @@ import { CheckCircle, Users, Clock, Award, Headphones, ThumbsUp } from "lucide-r
 const WhyUs = () => {
   const benefits = [
     {
-      icon: Award,
-      title: "Técnicos Certificados",
-      description: "Equipe altamente qualificada com certificações reconhecidas no mercado.",
-    },
-    {
       icon: Clock,
       title: "Agilidade no Atendimento",
       description: "Diagnóstico rápido e prazos cumpridos. Respeitamos o seu tempo.",
