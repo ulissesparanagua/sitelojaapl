@@ -5,7 +5,7 @@ const WhyUs = () => {
     {
       icon: Clock,
       title: "Agilidade no Atendimento",
-      description: "Diagnóstico rápido e prazos cumpridos. Respeitamos o seu tempo.",
+      description: "Diagnóstico em tempo hábil e prazos cumpridos. Respeitamos seu tempo.",
     },
     {
       icon: ThumbsUp,
