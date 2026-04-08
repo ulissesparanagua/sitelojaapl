@@ -2,7 +2,7 @@ import servicePC from "@/assets/service-pc.jpg";
 import serviceNotebook from "@/assets/service-notebook.jpg";
 import serviceData from "@/assets/service-data.jpg";
 import serviceSecurity from "@/assets/service-security.jpg";
-import serviceMaintenance from "@/assets/service-maintenance.jpg";
+import serviceCartridge from "@/assets/service-cartridge.jpg";
 import servicePrinter from "@/assets/service-printer.jpg";
 import detailPC from "@/assets/detail-pc.jpg";
 import detailNotebook from "@/assets/detail-notebook.jpg";
