@@ -2,13 +2,13 @@ import servicePC from "@/assets/service-pc.jpg";
 import serviceNotebook from "@/assets/service-notebook.jpg";
 import serviceData from "@/assets/service-data.jpg";
 import serviceSecurity from "@/assets/service-security.jpg";
-import serviceMaintenance from "@/assets/service-maintenance.jpg";
+import serviceCartridge from "@/assets/service-cartridge.jpg";
 import servicePrinter from "@/assets/service-printer.jpg";
 import detailPC from "@/assets/detail-pc.jpg";
 import detailNotebook from "@/assets/detail-notebook.jpg";
 import detailData from "@/assets/detail-data.jpg";
 import detailSecurity from "@/assets/detail-security.jpg";
-import detailMaintenance from "@/assets/detail-maintenance.jpg";
+import detailCartridge from "@/assets/detail-cartridge.jpg";
 import detailPrinter from "@/assets/detail-printer.jpg";
 
 export interface ServiceData {
@@ -95,21 +95,21 @@ export const servicesData: ServiceData[] = [
     ],
   },
   {
-    slug: "manutencao-preventiva",
-    image: serviceMaintenance,
-    detailImage: detailMaintenance,
-    title: "Manutenção Preventiva",
-    description: "Planos de manutenção para empresas. Evite problemas.",
-    fullDescription: "Nossos planos de manutenção preventiva são ideais para empresas que não podem parar. Realizamos visitas periódicas para garantir que todos os equipamentos estejam funcionando corretamente, prevenindo falhas e reduzindo custos com reparos emergenciais.",
+    slug: "recarga-de-cartuchos",
+    image: serviceCartridge,
+    detailImage: detailCartridge,
+    title: "Recarga de Cartuchos de Tinta e Toner",
+    description: "Recarga de cartuchos e toner das marcas HP, Canon e Brother com qualidade garantida.",
+    fullDescription: "Realizamos recarga de cartuchos de tinta e toner para impressoras HP, Canon e Brother. Utilizamos insumos de alta qualidade que garantem impressões nítidas e duráveis, com economia de até 70% em relação aos cartuchos originais novos.",
     features: [
-      "Planos mensais, trimestrais e semestrais",
-      "Limpeza e otimização periódica dos equipamentos",
-      "Verificação de hardware e prevenção de falhas",
-      "Atualização de software e sistema operacional",
-      "Monitoramento de desempenho e relatórios",
-      "Suporte prioritário para emergências",
-      "Gestão de backup e segurança de dados",
-      "Atendimento personalizado para cada empresa",
+      "Recarga de cartuchos de tinta HP, Canon e Brother",
+      "Recarga de toner para impressoras laser",
+      "Insumos de alta qualidade e procedência garantida",
+      "Economia de até 70% comparado ao original",
+      "Teste de qualidade de impressão após recarga",
+      "Troca de chip e peças de desgaste quando necessário",
+      "Garantia na recarga realizada",
+      "Atendimento rápido com entrega no mesmo dia",
     ],
   },
   {
