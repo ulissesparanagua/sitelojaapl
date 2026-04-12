@@ -99,8 +99,8 @@ export const servicesData: ServiceData[] = [
     image: serviceCartridge,
     detailImage: detailCartridge,
     title: "Recarga de Cartuchos de Tinta e Toner",
-    description: "Recarga de cartuchos e toner das marcas HP, Canon e Brother com qualidade garantida.",
-    fullDescription: "Realizamos recarga de cartuchos de tinta e toner para impressoras HP, Canon e Brother. Utilizamos insumos de alta qualidade que garantem impressões nítidas e duráveis, com economia de até 70% em relação aos cartuchos originais novos.",
+    description: "Recarga de cartuchos HP 667 e toner HP 85A, 105A e 505A com qualidade garantida.",
+    fullDescription: "Realizamos recarga de cartuchos de tinta HP 667 e toner HP 85A, 105A e 505A, além de outros modelos das marcas HP, Canon e Brother. Utilizamos insumos de alta qualidade que garantem impressões nítidas e duráveis, com economia de até 70% em relação aos cartuchos originais novos.",
     features: [
       "Recarga de cartuchos de tinta HP, Canon e Brother",
       "Recarga de toner para impressoras laser",
