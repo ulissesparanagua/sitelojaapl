@@ -25,8 +25,8 @@ const Header = () => {
               className="w-12 h-12 rounded-full object-cover shadow-soft group-hover:shadow-hover transition-shadow duration-300"
             />
             <span className="hidden sm:flex items-baseline gap-1">
-              <span className="font-brand text-2xl tracking-widest text-primary font-black">APL</span>
-              <span className="font-brand text-base tracking-[0.15em] uppercase text-foreground font-bold">Informática</span>
+              <span className="font-brand text-2xl tracking-[0.25em] text-primary font-black" style={{ fontStretch: 'expanded' }}>APL</span>
+              <span className="font-brand text-base tracking-[0.2em] uppercase text-foreground font-black" style={{ fontStretch: 'expanded' }}>Informática</span>
             </span>
           </a>
 
