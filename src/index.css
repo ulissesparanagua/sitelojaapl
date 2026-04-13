@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Orbitron:wght@700;800;900&display=swap');
 
 @layer base {
   :root {
@@ -148,8 +148,8 @@
   }
 
   .font-brand {
-    font-family: 'Michroma', system-ui, sans-serif;
-    font-weight: 400;
+    font-family: 'Orbitron', system-ui, sans-serif;
+    font-weight: 800;
     letter-spacing: 0.05em;
     text-transform: uppercase;
   }
