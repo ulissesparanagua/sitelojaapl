@@ -1,6 +1,5 @@
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, CheckCircle, Phone } from "lucide-react";
-import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { servicesData } from "@/lib/services-data";
 import Header from "@/components/Header";
@@ -11,11 +10,6 @@ const ServiceDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const service = servicesData.find((s) => s.slug === slug);
 
-  useEffect(() => {
-    document.title = service
-      ? `${service.title} | APL Informática`
-      : "APL Informática";
-  }, [service]);
   if (!service) {
     return (
       <div className="min-h-screen flex flex-col">
