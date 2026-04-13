@@ -67,9 +67,9 @@ const Footer = () => {
                 alt="APL Informática" 
                 className="w-12 h-12 rounded-full object-cover"
               />
-              <span className="flex items-center gap-1">
-                <span className="font-brand text-xl text-primary">APL</span>
-                <span className="text-lg font-semibold text-background">Informática</span>
+              <span className="flex items-baseline gap-1">
+                <span className="font-brand text-xl tracking-widest text-primary font-black">APL</span>
+                <span className="font-brand text-base tracking-[0.15em] uppercase text-background font-bold">Informática</span>
               </span>
             </a>
             <p className="text-background/70 mb-6 leading-relaxed">
