@@ -25,7 +25,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: Facebook, href: "https://www.facebook.com/aplinformatica", label: "Facebook" },
     { icon: Instagram, href: "https://www.instagram.com/aplinformatica/", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Linkedin, href: "https://www.linkedin.com/company/apl-inform%C3%A1tica/", label: "LinkedIn" },
   ];
 
   return (
