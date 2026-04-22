@@ -148,16 +148,17 @@
   }
 
   .font-brand {
-    font-family: 'Audiowide', 'Orbitron', system-ui, sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    font-family: 'Playfair Display', 'Noe Display', Georgia, serif;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    text-transform: none;
   }
 
   .font-brand-secondary {
-    font-family: 'Russo One', 'Inter', system-ui, sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
+    font-family: 'Playfair Display', 'Noe Display', Georgia, serif;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0.01em;
+    text-transform: none;
   }
 }

@@ -25,8 +25,8 @@ const Header = () => {
               className="w-12 h-12 rounded-full object-cover shadow-soft group-hover:shadow-hover transition-shadow duration-300"
             />
             <span className="hidden sm:flex items-baseline gap-2">
-              <span className="font-brand text-3xl md:text-4xl tracking-[0.15em] text-primary drop-shadow-sm" style={{ textShadow: '0 1px 2px hsl(var(--primary) / 0.25)' }}>APL</span>
-              <span className="font-brand-secondary text-base md:text-lg text-foreground">Informática</span>
+              <span className="font-brand text-3xl md:text-4xl text-primary drop-shadow-sm" style={{ textShadow: '0 1px 2px hsl(var(--primary) / 0.25)' }}>APL</span>
+              <span className="font-brand-secondary text-xl md:text-2xl text-foreground">Informática</span>
             </span>
           </a>
 
