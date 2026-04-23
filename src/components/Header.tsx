@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import logoApl from "@/assets/logo-apl.png";
+import aplTitle from "@/assets/apl-title.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,10 +25,11 @@ const Header = () => {
               alt="APL Informática" 
               className="w-12 h-12 rounded-full object-cover shadow-soft group-hover:shadow-hover transition-shadow duration-300"
             />
-            <span className="hidden sm:flex items-baseline gap-1 leading-none">
-              <span className="font-brand text-2xl md:text-3xl text-primary drop-shadow-sm" style={{ textShadow: '0 2px 4px hsl(var(--primary) / 0.35)' }}>APL</span>
-              <span className="font-brand-secondary text-lg md:text-xl text-foreground">Informática</span>
-            </span>
+            <img
+              src={aplTitle}
+              alt="APL Informática"
+              className="hidden sm:block h-10 md:h-12 w-auto object-contain"
+            />
           </a>
 
           {/* Desktop Navigation */}
