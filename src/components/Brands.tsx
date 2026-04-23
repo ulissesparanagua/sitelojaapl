@@ -1,15 +1,29 @@
+import dellLogo from "@/assets/brands/dell.svg";
+import hpLogo from "@/assets/brands/hp.svg";
+import asusLogo from "@/assets/brands/asus.svg";
+import lenovoLogo from "@/assets/brands/lenovo.svg";
+import acerLogo from "@/assets/brands/acer.svg";
+import samsungLogo from "@/assets/brands/samsung.svg";
+import lgLogo from "@/assets/brands/lg.svg";
+import appleLogo from "@/assets/brands/apple.svg";
+import microsoftLogo from "@/assets/brands/microsoft.svg";
+import msiLogo from "@/assets/brands/msi.svg";
+import toshibaLogo from "@/assets/brands/toshiba.svg";
+import sonyLogo from "@/assets/brands/sony.svg";
+
 const brands = [
-  { name: "Dell", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Dell_Logo.svg/200px-Dell_Logo.svg.png" },
-  { name: "HP", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/200px-HP_logo_2012.svg.png" },
-  { name: "Vaio", logo: "https://logos-world.net/wp-content/uploads/2023/03/Vaio-Logo.png" },
-  { name: "Asus", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/ASUS_Logo.svg/200px-ASUS_Logo.svg.png" },
-  { name: "Lenovo", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Lenovo_logo_2015.svg/200px-Lenovo_logo_2015.svg.png" },
-  { name: "ThinkPad", logo: "https://logos-world.net/wp-content/uploads/2021/10/ThinkPad-Logo.png" },
-  { name: "Positivo", logo: "https://logos-world.net/wp-content/uploads/2023/12/Positivo-Logo.png" },
-  { name: "Acer", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Acer_2011.svg/200px-Acer_2011.svg.png" },
-  { name: "STI", logo: "https://logos-world.net/wp-content/uploads/2023/12/Semp-Toshiba-Logo.png" },
-  { name: "Avell", logo: "https://logos-world.net/wp-content/uploads/2023/12/Avell-Logo.png" },
-  { name: "Samsung", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/200px-Samsung_Logo.svg.png" },
+  { name: "Dell", logo: dellLogo },
+  { name: "HP", logo: hpLogo },
+  { name: "Lenovo", logo: lenovoLogo },
+  { name: "Asus", logo: asusLogo },
+  { name: "Acer", logo: acerLogo },
+  { name: "Apple", logo: appleLogo },
+  { name: "Samsung", logo: samsungLogo },
+  { name: "LG", logo: lgLogo },
+  { name: "Microsoft", logo: microsoftLogo },
+  { name: "MSI", logo: msiLogo },
+  { name: "Toshiba", logo: toshibaLogo },
+  { name: "Sony Vaio", logo: sonyLogo },
 ];
 
 const Brands = () => {
@@ -23,17 +37,21 @@ const Brands = () => {
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-2">
             Trabalhamos com as <span className="text-primary">principais marcas</span>
           </h2>
+          <p className="text-muted-foreground mt-3 text-sm md:text-base">
+            Atendimento especializado para notebooks de todos os fabricantes
+          </p>
         </div>
-        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+        <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-8 md:gap-x-14">
           {brands.map((brand) => (
             <div
               key={brand.name}
-              className="grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300"
+              className="opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-110"
+              title={brand.name}
             >
               <img
                 src={brand.logo}
-                alt={brand.name}
-                className="h-8 md:h-10 w-auto object-contain"
+                alt={`Logo ${brand.name}`}
+                className="h-10 md:h-12 w-auto object-contain"
                 loading="lazy"
               />
             </div>
