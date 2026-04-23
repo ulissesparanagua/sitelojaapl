@@ -1,5 +1,5 @@
 import servicePC from "@/assets/service-pc.jpg";
-import serviceNotebook from "@/assets/service-notebook.jpg";
+import serviceNotebook from "@/assets/service-notebook-new.jpg";
 import serviceData from "@/assets/service-data.jpg";
 import serviceSecurity from "@/assets/service-security.jpg";
 import serviceCartridge from "@/assets/service-cartridge.jpg";
