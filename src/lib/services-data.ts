@@ -5,7 +5,7 @@ import serviceSecurity from "@/assets/service-security.jpg";
 import serviceCartridge from "@/assets/service-cartridge.jpg";
 import servicePrinter from "@/assets/service-printer.jpg";
 import detailPC from "@/assets/detail-pc.jpg";
-import detailNotebook from "@/assets/detail-notebook.jpg";
+import detailNotebook from "@/assets/service-notebook-new.jpg";
 import detailData from "@/assets/detail-data.jpg";
 import detailSecurity from "@/assets/detail-security.jpg";
 import detailCartridge from "@/assets/detail-cartridge.jpg";
