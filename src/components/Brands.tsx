@@ -6,8 +6,6 @@ import acerLogo from "@/assets/brands/acer.svg";
 import samsungLogo from "@/assets/brands/samsung.svg";
 import lgLogo from "@/assets/brands/lg.svg";
 import appleLogo from "@/assets/brands/apple.svg";
-import microsoftLogo from "@/assets/brands/microsoft.svg";
-import msiLogo from "@/assets/brands/msi.svg";
 import toshibaLogo from "@/assets/brands/toshiba.svg";
 import sonyLogo from "@/assets/brands/sony.svg";
 
@@ -20,8 +18,6 @@ const brands = [
   { name: "Apple", logo: appleLogo },
   { name: "Samsung", logo: samsungLogo },
   { name: "LG", logo: lgLogo },
-  { name: "Microsoft", logo: microsoftLogo },
-  { name: "MSI", logo: msiLogo },
   { name: "Toshiba", logo: toshibaLogo },
   { name: "Sony Vaio", logo: sonyLogo },
 ];
