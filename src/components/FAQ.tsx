@@ -9,7 +9,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "Qual o prazo médio para conserto de um notebook?",
-      answer: "O prazo médio varia de 24 a 72 horas, dependendo da complexidade do problema e disponibilidade de peças. Para reparos simples, como troca de tela ou teclado, geralmente entregamos em 24 horas.",
+      answer: "O prazo médio é de 3 a 5 dias úteis. Para reparos simples de formatação, geralmente entregamos em 24 horas.",
     },
     {
       question: "Vocês oferecem garantia nos serviços?",
