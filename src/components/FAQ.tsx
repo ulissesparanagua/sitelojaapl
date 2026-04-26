@@ -25,7 +25,7 @@ const FAQ = () => {
     },
     {
       question: "Como funciona o orçamento?",
-      answer: "O orçamento é gratuito e sem compromisso. Você pode trazer o equipamento até nossa loja ou solicitar uma visita técnica. Após a análise, enviamos o orçamento detalhado por WhatsApp ou e-mail.",
+      answer: "O orçamento é feito levando o equipamento para nossa loja. Será feito orçamento entre 3 a 5 dias úteis (a depender do defeito), enviamos o orçamento detalhado por WhatsApp.",
     },
   ];
 
