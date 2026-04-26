@@ -127,7 +127,7 @@ export const servicesData: ServiceData[] = [
       "Instalação de drivers e software",
       "Limpeza e calibração de qualidade de impressão",
       "Substituição de peças e componentes",
-      "Atendimento para todas as marcas do mercado",
+      "Atendimento para marcas como: HP, Canon, Brother, Samsung",
     ],
   },
 ];
