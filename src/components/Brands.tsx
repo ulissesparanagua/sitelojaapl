@@ -8,6 +8,7 @@ import lgLogo from "@/assets/brands/lg.svg";
 import appleLogo from "@/assets/brands/apple.svg";
 import toshibaLogo from "@/assets/brands/toshiba.svg";
 import sonyLogo from "@/assets/brands/sony.svg";
+import thinkpadLogo from "@/assets/brands/thinkpad.svg";
 
 const brands = [
   { name: "Dell", logo: dellLogo },
@@ -20,6 +21,7 @@ const brands = [
   { name: "LG", logo: lgLogo },
   { name: "Toshiba", logo: toshibaLogo },
   { name: "Sony Vaio", logo: sonyLogo },
+  { name: "ThinkPad", logo: thinkpadLogo },
 ];
 
 const Brands = () => {
