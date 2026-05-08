@@ -4,6 +4,7 @@ import serviceData from "@/assets/service-data.jpg";
 import serviceSecurity from "@/assets/service-security.jpg";
 import serviceCartridge from "@/assets/service-cartridge.jpg";
 import servicePrinter from "@/assets/service-printer.jpg";
+import serviceGamingPC from "@/assets/service-gaming-pc.jpg";
 import detailPC from "@/assets/detail-pc.jpg";
 import detailNotebook from "@/assets/service-notebook-new.jpg";
 import detailData from "@/assets/detail-data.jpg";
