@@ -53,16 +53,6 @@ const ServiceDetail = () => {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/40 to-transparent" />
-          <div className="absolute top-4 left-4 z-10">
-            <Link
-              to="/#servicos"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-full font-semibold shadow-hover hover:bg-primary/90 transition-all text-sm"
-              aria-label="Voltar aos serviços"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              Voltar aos serviços
-            </Link>
-          </div>
           <div className="absolute inset-0 flex items-end">
             <div className="container mx-auto px-4 pb-10">
               <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground">
@@ -71,6 +61,20 @@ const ServiceDetail = () => {
             </div>
           </div>
         </section>
+
+        {/* Back link below banner */}
+        <div className="bg-background border-b border-border">
+          <div className="container mx-auto px-4 py-4">
+            <Link
+              to="/#servicos"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-full font-semibold shadow-hover hover:bg-primary/90 transition-all text-sm"
+              aria-label="Voltar aos serviços"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Voltar aos serviços
+            </Link>
+          </div>
+        </div>
 
         {/* Content */}
         <section className="py-12 md:py-20 bg-background">
