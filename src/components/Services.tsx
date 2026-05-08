@@ -31,7 +31,11 @@ const Services = () => {
               key={service.slug}
               className="group rounded-2xl overflow-hidden bg-card border border-border hover:border-primary/30 shadow-card hover:shadow-hover transition-all duration-300"
             >
-              <div className="relative h-48 overflow-hidden">
+              <Link
+                to={`/servicos/${service.slug}`}
+                className="block relative h-48 overflow-hidden"
+                aria-label={`Ver detalhes do serviço ${service.title}`}
+              >
                 <img 
                   src={service.image} 
                   alt={service.title}
@@ -39,10 +43,15 @@ const Services = () => {
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
-              </div>
+              </Link>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-foreground mb-2">
-                  {service.title}
+                  <Link
+                    to={`/servicos/${service.slug}`}
+                    className="hover:text-primary transition-colors"
+                  >
+                    {service.title}
+                  </Link>
                 </h3>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
                   {service.description}
