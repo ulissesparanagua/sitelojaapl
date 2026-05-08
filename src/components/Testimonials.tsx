@@ -1,4 +1,5 @@
 import { Star, Quote } from "lucide-react";
+import logoApl from "@/assets/logo-apl.png";
 
 const Testimonials = () => {
   const testimonials = [
@@ -23,8 +24,20 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-foreground">
-      <div className="container mx-auto px-4">
+    <section className="relative py-16 md:py-24 bg-foreground overflow-hidden">
+      {/* Faded circular logo background */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 flex items-center justify-center"
+      >
+        <img
+          src={logoApl}
+          alt=""
+          className="w-[480px] md:w-[640px] lg:w-[760px] max-w-none opacity-[0.06] rounded-full select-none"
+        />
+      </div>
+
+      <div className="relative z-10 container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">
