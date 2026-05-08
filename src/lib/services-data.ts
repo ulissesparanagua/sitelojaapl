@@ -131,4 +131,22 @@ export const servicesData: ServiceData[] = [
       "Atendimento para marcas como: HP, Canon, Brother, Samsung",
     ],
   },
+  {
+    slug: "montagem-manutencao-pc-gamer",
+    image: serviceGamingPC,
+    detailImage: serviceGamingPC,
+    title: "Montagem e Manutenção de PC Gamer",
+    description: "Montagem personalizada de PCs gamer, upgrades de alto desempenho e manutenção especializada.",
+    fullDescription: "Somos especializados na montagem e manutenção de computadores gamer de alto desempenho. Realizamos builds personalizados conforme seu orçamento e necessidade, com seleção criteriosa de componentes, gerenciamento de cabos profissional e testes de estabilidade. Também oferecemos manutenção preventiva e corretiva para que seu PC gamer entregue o máximo de FPS e durabilidade.",
+    features: [
+      "Montagem personalizada de PC gamer sob medida",
+      "Consultoria na escolha de componentes (CPU, GPU, RAM, SSD)",
+      "Instalação de water cooler e refrigeração líquida customizada",
+      "Cable management e organização interna profissional",
+      "Overclock seguro de processador e memória",
+      "Atualização de BIOS e otimização para jogos",
+      "Limpeza profunda e troca de pasta térmica de alta performance",
+      "Testes de benchmark e estabilidade pós-montagem",
+    ],
+  },
 ];
