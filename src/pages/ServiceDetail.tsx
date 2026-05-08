@@ -74,7 +74,7 @@ const ServiceDetail = () => {
               Voltar aos serviços
             </Link>
           </div>
-        </section>
+        </div>
 
         {/* Content */}
         <section className="py-12 md:py-20 bg-background">
