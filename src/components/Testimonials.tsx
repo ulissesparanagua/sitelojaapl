@@ -1,4 +1,5 @@
 import { Star, Quote } from "lucide-react";
+import logoApl from "@/assets/logo-apl.png";
 
 const Testimonials = () => {
   const testimonials = [
