@@ -31,6 +31,20 @@ const ServiceDetail = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1">
+        {/* Back bar */}
+        <div className="bg-card border-b border-border sticky top-0 z-30">
+          <div className="container mx-auto px-4 py-3">
+            <Link
+              to="/#servicos"
+              className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
+              aria-label="Voltar aos serviços"
+            >
+              <ArrowLeft className="w-5 h-5" />
+              Voltar aos serviços
+            </Link>
+          </div>
+        </div>
+
         {/* Hero Banner */}
         <section className="relative h-[340px] md:h-[420px] overflow-hidden">
           <img
@@ -39,15 +53,18 @@ const ServiceDetail = () => {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/40 to-transparent" />
+          <div className="absolute top-4 left-4 z-10">
+            <Link
+              to="/#servicos"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-full font-semibold shadow-hover hover:bg-primary/90 transition-all text-sm"
+              aria-label="Voltar aos serviços"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Voltar aos serviços
+            </Link>
+          </div>
           <div className="absolute inset-0 flex items-end">
             <div className="container mx-auto px-4 pb-10">
-              <Link
-                to="/#servicos"
-                className="inline-flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground mb-4 transition-colors text-sm"
-              >
-                <ArrowLeft className="w-4 h-4" />
-                Voltar aos serviços
-              </Link>
               <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground">
                 {service.title}
               </h1>
