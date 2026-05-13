@@ -23,7 +23,7 @@ const Header = () => {
             <img 
               src={logoApl} 
               alt="APL Informática" 
-              className="w-12 h-12 object-contain transition-transform duration-300 group-hover:scale-105"
+              className="w-12 h-12 rounded-full object-cover shadow-soft group-hover:shadow-hover transition-shadow duration-300"
             />
             <img
               src={aplTitle}
