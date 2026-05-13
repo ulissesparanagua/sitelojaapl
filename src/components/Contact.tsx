@@ -21,7 +21,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Endereço",
-      content: "Av. Brigadeiro Mário Epinghaus, nº 329",
+      content: "Av. Brigadeiro Mário Epinghaus, nº 329 - Centro Empresarial Top Center, Loja 20",
       subtitle: "Centro - Lauro de Freitas-BA | CEP: 42703-640",
     },
     {

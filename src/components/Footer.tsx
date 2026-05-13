@@ -131,7 +131,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-background/70">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span>Av. Brigadeiro Mário Epinghaus, nº 329<br />Centro - Lauro de Freitas-BA<br />CEP: 42703-640</span>
+                <span>Av. Brigadeiro Mário Epinghaus, nº 329<br />Centro Empresarial Top Center, Loja 20<br />Centro - Lauro de Freitas-BA<br />CEP: 42703-640</span>
               </li>
               <li className="flex items-center gap-3 text-background/70">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
