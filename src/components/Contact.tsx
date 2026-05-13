@@ -28,7 +28,7 @@ const Contact = () => {
       icon: Phone,
       title: "Telefone / WhatsApp",
       content: "(71) 3378-9497",
-      subtitle: "WhatsApp: (71) 99313-6222",
+      subtitle: "WhatsApp: (71) 99313-6222 | (71) 98877-3870",
     },
     {
       icon: Mail,
