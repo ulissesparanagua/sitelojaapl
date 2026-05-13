@@ -23,7 +23,7 @@ const WhyUs = () => {
     { value: "25+", label: "Anos de experiência" },
     { value: "5000+", label: "Clientes atendidos" },
     { value: "98%", label: "Taxa de satisfação" },
-    { value: "24h", label: "Tempo médio de reparo" },
+    { value: "48h", label: "Tempo médio de reparo" },
   ];
 
   return (

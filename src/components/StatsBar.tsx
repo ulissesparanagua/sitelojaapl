@@ -3,7 +3,7 @@ const StatsBar = () => {
     { value: "25+", label: "Anos de Experiência" },
     { value: "5.000+", label: "Clientes Atendidos" },
     { value: "98%", label: "Taxa de Satisfação" },
-    { value: "24h", label: "Tempo Médio de Reparo" },
+    { value: "48h", label: "Tempo Médio de Reparo" },
   ];
 
   return (
