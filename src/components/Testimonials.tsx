@@ -4,22 +4,40 @@ import logoApl from "@/assets/logo-apl.png";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Carlos Silva",
-      role: "Empresário",
-      content: "Excelente atendimento! Meu notebook foi consertado em menos de 24 horas. Recomendo a todos.",
+      name: "Dj Nestor Azevedo",
+      role: "Local Guide • Google",
+      content: "A melhor oficina de computadores de Lauro de Freitas. Recomendo. Nota 1000.",
       rating: 5,
     },
     {
-      name: "Ana Costa",
-      role: "Designer",
-      content: "Profissionais muito competentes. Recuperaram todos os meus arquivos de um HD danificado.",
+      name: "Luciano Aleixo",
+      role: "Cliente • Google",
+      content: "APL eh referência em valores, qualidade... a mais de 20 anos no mesmo endereço... sou fã da loja e dos proprietários pelo valor que eles entregam.",
       rating: 5,
     },
     {
-      name: "Roberto Mendes",
-      role: "Contador",
-      content: "Atendimento rápido e preço justo. A APL Informática é minha escolha para qualquer problema.",
+      name: "Naiana Souza Laborda",
+      role: "Local Guide • Google",
+      content: "Ótimo atendimento, qualidade e boa orientação.",
       rating: 5,
+    },
+    {
+      name: "Fábio Oliveira",
+      role: "Local Guide • Google",
+      content: "Pessoal muito competente.",
+      rating: 5,
+    },
+    {
+      name: "Robson Teles",
+      role: "Cliente • Google",
+      content: "Excelente serviço.",
+      rating: 5,
+    },
+    {
+      name: "Íngara Lorena",
+      role: "Local Guide • Google",
+      content: "A loja existe há anos. Atendimento de qualidade, funcionam de segunda a sábado e possuem atendimento via whatsapp.",
+      rating: 4,
     },
   ];
 
