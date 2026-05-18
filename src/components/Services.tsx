@@ -1,6 +1,29 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Monitor, Wrench, HardDrive, Download } from "lucide-react";
 import { Link } from "react-router-dom";
 import { servicesData } from "@/lib/services-data";
+
+const quickServices = [
+  {
+    icon: Monitor,
+    title: "Formatação",
+    description: "Formatação completa com backup de arquivos, instalação de drivers e configuração de programas essenciais.",
+  },
+  {
+    icon: Wrench,
+    title: "Manutenção",
+    description: "Limpeza interna, troca de pasta térmica, diagnóstico de hardware e otimização de desempenho.",
+  },
+  {
+    icon: HardDrive,
+    title: "Recuperação de Dados",
+    description: "Recuperação de arquivos em HDs, SSDs e pendrives danificados ou com falhas lógicas.",
+  },
+  {
+    icon: Download,
+    title: "Instalação",
+    description: "Instalação de programas, antivírus, impressoras, drivers e configuração de redes.",
+  },
+];
 
 const Services = () => {
   return (
