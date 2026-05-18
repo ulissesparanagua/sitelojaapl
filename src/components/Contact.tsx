@@ -17,7 +17,13 @@ const Contact = () => {
     console.log("Form submitted:", formData);
   };
 
-  const contactInfo = [
+  const contactInfo: {
+    icon: React.ElementType;
+    title: string;
+    content: string;
+    subtitle: string;
+    whatsappNumbers?: { label: string; number: string; display: string }[];
+  }[] = [
     {
       icon: MapPin,
       title: "Endereço",
