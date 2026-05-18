@@ -28,7 +28,11 @@ const Contact = () => {
       icon: Phone,
       title: "Telefone / WhatsApp",
       content: "(71) 3378-9497",
-      subtitle: "WhatsApp: (71) 99313-6222 | (71) 98877-3870",
+      subtitle: "",
+      whatsappNumbers: [
+        { label: "WhatsApp", number: "5571993136222", display: "(71) 99313-6222" },
+        { label: "WhatsApp", number: "5571988773870", display: "(71) 98877-3870" },
+      ],
     },
     {
       icon: Mail,
