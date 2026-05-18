@@ -90,6 +90,34 @@ const Services = () => {
             </div>
           ))}
         </div>
+
+        {/* Quick Services Cards */}
+        <div className="mt-16">
+          <h3 className="text-2xl font-bold text-foreground text-center mb-8">
+            Serviços <span className="text-primary">Rápidos</span>
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {quickServices.map((service) => {
+              const Icon = service.icon;
+              return (
+                <div
+                  key={service.title}
+                  className="group rounded-xl bg-card border border-border p-6 hover:border-primary/30 hover:shadow-hover transition-all duration-300"
+                >
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                    <Icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <h4 className="text-lg font-bold text-foreground mb-2">
+                    {service.title}
+                  </h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </section>
   );
