@@ -76,6 +76,21 @@ const Contact = () => {
                     {info.subtitle && (
                       <p className="text-muted-foreground text-sm">{info.subtitle}</p>
                     )}
+                    {info.whatsappNumbers && (
+                      <div className="flex flex-col gap-1 mt-1">
+                        {info.whatsappNumbers.map((w) => (
+                          <a
+                            key={w.number}
+                            href={`https://wa.me/${w.number}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-muted-foreground text-sm hover:text-primary transition-colors"
+                          >
+                            {w.label}: {w.display}
+                          </a>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
