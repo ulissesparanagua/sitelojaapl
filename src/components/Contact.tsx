@@ -17,7 +17,13 @@ const Contact = () => {
     console.log("Form submitted:", formData);
   };
 
-  const contactInfo = [
+  const contactInfo: {
+    icon: React.ElementType;
+    title: string;
+    content: string;
+    subtitle: string;
+    whatsappNumbers?: { label: string; number: string; display: string }[];
+  }[] = [
     {
       icon: MapPin,
       title: "Endereço",
@@ -28,7 +34,11 @@ const Contact = () => {
       icon: Phone,
       title: "Telefone / WhatsApp",
       content: "(71) 3378-9497",
-      subtitle: "WhatsApp: (71) 99313-6222 | (71) 98877-3870",
+      subtitle: "",
+      whatsappNumbers: [
+        { label: "WhatsApp", number: "5571993136222", display: "(71) 99313-6222" },
+        { label: "WhatsApp", number: "5571988773870", display: "(71) 98877-3870" },
+      ],
     },
     {
       icon: Mail,
@@ -71,6 +81,21 @@ const Contact = () => {
                     <p className="text-muted-foreground">{info.content}</p>
                     {info.subtitle && (
                       <p className="text-muted-foreground text-sm">{info.subtitle}</p>
+                    )}
+                    {info.whatsappNumbers && (
+                      <div className="flex flex-col gap-1 mt-1">
+                        {info.whatsappNumbers.map((w) => (
+                          <a
+                            key={w.number}
+                            href={`https://wa.me/${w.number}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-muted-foreground text-sm hover:text-primary transition-colors"
+                          >
+                            {w.label}: {w.display}
+                          </a>
+                        ))}
+                      </div>
                     )}
                   </div>
                 </div>

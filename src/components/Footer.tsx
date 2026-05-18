@@ -137,9 +137,26 @@ const Footer = () => {
                 <Phone className="w-5 h-5 text-primary shrink-0" />
                 <span>(71) 3378-9497</span>
               </li>
-              <li className="flex items-center gap-3 text-background/70">
-                <Phone className="w-5 h-5 text-primary shrink-0" />
-                <span>WhatsApp: (71) 99313-6222<br />WhatsApp: (71) 98877-3870</span>
+              <li className="flex items-start gap-3 text-background/70">
+                <Phone className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <div className="flex flex-col">
+                  <a
+                    href="https://wa.me/5571993136222"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors"
+                  >
+                    WhatsApp: (71) 99313-6222
+                  </a>
+                  <a
+                    href="https://wa.me/5571988773870"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors"
+                  >
+                    WhatsApp: (71) 98877-3870
+                  </a>
+                </div>
               </li>
               <li className="flex items-center gap-3 text-background/70">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
