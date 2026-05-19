@@ -32,17 +32,22 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
-              <Button variant="hero" size="lg" className="group">
-                Solicitar Orçamento
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <Button variant="hero" size="lg" className="group" asChild>
+                <a href="https://wa.me/5571993136222" target="_blank" rel="noopener noreferrer">
+                  Solicitar Orçamento
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
               <Button 
                 variant="heroOutline" 
                 size="lg"
                 className="border-background/30 text-background hover:bg-background/10"
+                asChild
               >
-                <Phone className="w-5 h-5" />
-                (71) 99313-6222
+                <a href="https://wa.me/5571993136222" target="_blank" rel="noopener noreferrer">
+                  <Phone className="w-5 h-5" />
+                  (71) 99313-6222
+                </a>
               </Button>
             </div>
 
