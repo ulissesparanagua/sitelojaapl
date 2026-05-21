@@ -15,7 +15,7 @@ const WhyUs = () => {
     {
       icon: Monitor,
       title: "Suporte via Remoto",
-      description: "Atendimento personalizado do início ao fim. Estamos sempre disponíveis.",
+      description: "Atendimento personalizado para nossos clientes solucionando alguns problemas remotamente.",
     },
   ];
 
