@@ -27,6 +27,10 @@ const FAQ = () => {
       question: "Como funciona o orçamento?",
       answer: "O orçamento é feito levando o equipamento para nossa loja. Será feito orçamento entre 3 a 5 dias úteis (a depender do defeito), enviamos o orçamento detalhado por WhatsApp.",
     },
+    {
+      question: "Minha carcaça do notebook está soltando, e dobradiças soltando da moldura da tela, tem reparo?",
+      answer: "Tem reparo sim, fazemos a fixação das dobradiças e da carcaça do notebook. E quando necessário pode ser trocado alguma peça por uma nova.",
+    },
   ];
 
   return (
