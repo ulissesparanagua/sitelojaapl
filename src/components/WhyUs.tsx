@@ -1,4 +1,4 @@
-import { CheckCircle, Users, Clock, Award, Headphones, ThumbsUp } from "lucide-react";
+import { CheckCircle, Users, Clock, Award, Monitor, ThumbsUp } from "lucide-react";
 
 const WhyUs = () => {
   const benefits = [
@@ -13,8 +13,8 @@ const WhyUs = () => {
       description: "Todos os serviços possuem garantia. Sua satisfação é nossa prioridade.",
     },
     {
-      icon: Headphones,
-      title: "Suporte Dedicado",
+      icon: Monitor,
+      title: "Suporte via Remoto",
       description: "Atendimento personalizado do início ao fim. Estamos sempre disponíveis.",
     },
   ];
