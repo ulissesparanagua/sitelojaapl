@@ -6,7 +6,7 @@ const LNG = -38.3267;
 
 const Location = () => {
   const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(ADDRESS)}&output=embed`;
-  const streetSrc = `https://maps.google.com/maps?q=&layer=c&cbll=${LAT},${LNG}&cbp=11,0,0,0,0&output=svembed`;
+  const streetSrc = `https://maps.google.com/maps?q=${encodeURIComponent(ADDRESS)}&layer=c&output=svembed`;
   const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(ADDRESS)}`;
 
   return (
