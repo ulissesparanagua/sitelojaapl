@@ -7,6 +7,7 @@ import WhyUs from "@/components/WhyUs";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
+import Location from "@/components/Location";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -22,6 +23,7 @@ const Index = () => {
         <WhyUs />
         <Testimonials />
         <FAQ />
+        <Location />
         <Contact />
       </main>
       <Footer />
