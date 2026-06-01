@@ -21,7 +21,7 @@ const brands = [
   { name: "LG", logo: lgLogo },
   { name: "Toshiba", logo: toshibaLogo },
   { name: "Sony Vaio", logo: sonyLogo },
-  { name: "ThinkPad", logo: thinkpadLogo },
+  { name: "ThinkPad", logo: thinkpadLogo.url },
 ];
 
 const Brands = () => {
