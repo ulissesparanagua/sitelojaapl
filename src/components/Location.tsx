@@ -1,12 +1,9 @@
 import { MapPin } from "lucide-react";
 
 const ADDRESS = "Av. Brigadeiro Mário Epinghaus, 329, Centro, Lauro de Freitas - BA";
-const LAT = -12.8946;
-const LNG = -38.3267;
 
 const Location = () => {
   const mapSrc = `https://maps.google.com/maps?q=${encodeURIComponent(ADDRESS)}&output=embed`;
-  const streetSrc = `https://maps.google.com/maps?q=${encodeURIComponent(ADDRESS)}&layer=c&output=svembed`;
   const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(ADDRESS)}`;
 
   return (
@@ -25,30 +22,16 @@ const Location = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="rounded-xl overflow-hidden shadow-soft border border-border">
-            <div className="bg-muted px-4 py-2 font-semibold text-foreground">Mapa</div>
-            <iframe
-              title="Mapa da loja APL Informática"
-              src={mapSrc}
-              className="w-full h-80 border-0"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-            />
-          </div>
-
-          <div className="rounded-xl overflow-hidden shadow-soft border border-border">
-            <div className="bg-muted px-4 py-2 font-semibold text-foreground">Street View</div>
-            <iframe
-              title="Street View da loja APL Informática"
-              src={streetSrc}
-              className="w-full h-80 border-0"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-            />
-          </div>
+        <div className="rounded-xl overflow-hidden shadow-soft border border-border max-w-4xl mx-auto">
+          <div className="bg-muted px-4 py-2 font-semibold text-foreground">Mapa</div>
+          <iframe
+            title="Mapa da loja APL Informática"
+            src={mapSrc}
+            className="w-full h-96 border-0"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+          />
         </div>
 
         <div className="text-center mt-8">
