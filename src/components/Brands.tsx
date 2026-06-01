@@ -8,7 +8,7 @@ import lgLogo from "@/assets/brands/lg.svg";
 import appleLogo from "@/assets/brands/apple.svg";
 import toshibaLogo from "@/assets/brands/toshiba.svg";
 import sonyLogo from "@/assets/brands/sony.svg";
-import thinkpadLogo from "@/assets/brands/thinkpad.svg";
+import thinkpadLogo from "@/assets/brands/thinkpad.png.asset.json";
 
 const brands = [
   { name: "Dell", logo: dellLogo },
